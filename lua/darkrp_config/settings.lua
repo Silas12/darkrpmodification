@@ -110,7 +110,7 @@ GM.Config.lockpickfading                = true
 -- logging - Enable/disable logging everything that happens.
 GM.Config.logging                       = true
 -- lottery - Enable/disable creating lotteries for mayors.
-GM.Config.lottery                       = true
+GM.Config.lottery                       = false
 -- showname - Whether or not to display a player's name above their head in-game.
 GM.Config.showname                      = true
 -- showhealth - Whether or not to display a player's health above their head in-game.
@@ -321,8 +321,8 @@ GM.Config.DisabledCustomModules = {
 GM.Config.DisallowDrop = {
     ["arrest_stick"] = true,
     ["door_ram"] = true,
-    ["gmod_camera"] = true,
-    ["gmod_tool"] = true,
+    ["gmod_camera"] = false,
+    ["gmod_tool"] = false,
     ["keys"] = true,
     ["lockpick"] = true,
     ["med_kit"] = true,
@@ -338,11 +338,8 @@ GM.Config.DisallowDrop = {
 -- The list of weapons people spawn with.
 GM.Config.DefaultWeapons = {
     "keys",
-    "weapon_physcannon",
-    "gmod_camera",
-    "gmod_tool",
     "pocket",
-    "weapon_physgun",
+    
 }
 
 -- Override categories.
@@ -352,19 +349,15 @@ GM.Config.DefaultWeapons = {
 -- Make sure the category is created in the darkrp_customthings/categories.lua, otherwise it won't work!
 GM.Config.CategoryOverride = {
     jobs = {
-        ["Citizen"]                             = "Citizens",
-        ["Hobo"]                                = "Citizens",
-        ["Gun Dealer"]                          = "Citizens",
-        ["Medic"]                               = "Citizens",
-        ["Civil Protection"]                    = "Civil Protection",
-        ["Gangster"]                            = "Gangsters",
-        ["Mob boss"]                            = "Gangsters",
-        ["Civil Protection Chief"]              = "Civil Protection",
-        ["Mayor"]                               = "Civil Protection",
+        ["Class-D Personnel"]                             = "Citizens",
+        ["Mobile Task Force"]                                = "Civil Protection",
+        ["Security Department"]                          = "Civil Protection",
+        ["05-Council"]                               = "Citizens",
+        ["Administrator"]                    = "Mayor",
+        ["Researcher"]                            = "Medic",
     },
     entities = {
-        ["Drug lab"]                            = "Other",
-        ["Money printer"]                       = "Other",
+        
         ["Gun lab"]                             = "Other",
 
     },
