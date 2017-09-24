@@ -338,11 +338,8 @@ GM.Config.DisallowDrop = {
 -- The list of weapons people spawn with.
 GM.Config.DefaultWeapons = {
     "keys",
-    "weapon_physcannon",
-    "gmod_camera",
-    "gmod_tool",
     "pocket",
-    "weapon_physgun",
+   
 }
 
 -- Override categories.
@@ -352,15 +349,13 @@ GM.Config.DefaultWeapons = {
 -- Make sure the category is created in the darkrp_customthings/categories.lua, otherwise it won't work!
 GM.Config.CategoryOverride = {
     jobs = {
-        ["Citizen"]                             = "Citizens",
-        ["Hobo"]                                = "Citizens",
-        ["Gun Dealer"]                          = "Citizens",
-        ["Medic"]                               = "Citizens",
-        ["Civil Protection"]                    = "Civil Protection",
-        ["Gangster"]                            = "Gangsters",
-        ["Mob boss"]                            = "Gangsters",
-        ["Civil Protection Chief"]              = "Civil Protection",
-        ["Mayor"]                               = "Civil Protection",
+        ["Class-D"]                             = "Citizen",
+        ["MTF"]                               = "Civil Protection",
+        ["Security"]           = "Civil Protection",
+        ["Recearscher"]                 = "Citizen",
+        ["05-council"]                            = "Citizen",
+        ["Administrator"]              = "Civil Protection",
+       
     },
     entities = {
         ["Drug lab"]                            = "Other",
